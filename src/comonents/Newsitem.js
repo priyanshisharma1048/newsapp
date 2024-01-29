@@ -8,10 +8,17 @@ export class Newsitem extends Component {
     return (
       <div className="my-3">
         <div className="card">
-        <span class="position-absolute top-0  translate-middle badge rounded-pill bg-danger"style={{left:'90%',zIndex:'2'}}>{source}
+          <div style={{
+            display:'flex',
+            justifyContent:'flex-end',
+            position:'absolute',
+            right:'0'
+          }}>
+        <span className=" badge rounded-pill bg-danger">{source}
                 99+
                 <span class="visually-hidden">unread messages</span>
               </span>
+              </div>
           {/* You might want to replace the placeholder image source */}
           <img
             src={
